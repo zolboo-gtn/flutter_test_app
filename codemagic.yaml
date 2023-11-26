@@ -43,7 +43,7 @@ workflows:
       firebase:
         firebase_service_account: $GCLOUD_SERVICE_ACCOUNT_CREDENTIALS
         android:
-          app_id: 1:570942649027:android:041abf55ae5054d697a876
+          app_id: 1:570942649027:android:044b20f2dfe0b64397a876
           groups:
             - android_testers
           artifact_type: "apk"
@@ -101,6 +101,6 @@ workflows:
       firebase:
         firebase_service_account: $GCLOUD_SERVICE_ACCOUNT_CREDENTIALS
         ios:
-          app_id: 1:570942649027:ios:4fd11af4929fc73197a876
+          app_id: 1:570942649027:ios:83855e7d7296731c97a876
           groups:
             - ios_testers
