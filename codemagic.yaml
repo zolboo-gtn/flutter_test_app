@@ -14,6 +14,7 @@ workflows:
         - pattern: "main"
           include: true
           source: true
+      cancel_previous_builds: true
     when:
       changeset:
         includes:
@@ -66,6 +67,7 @@ workflows:
         - pattern: "main"
           include: true
           source: true
+      cancel_previous_builds: true
     when:
       changeset:
         includes:
