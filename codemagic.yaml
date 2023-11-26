@@ -7,6 +7,23 @@ workflows:
       groups:
         - firebase_credentials
       flutter: stable
+    triggering:
+      events:
+        - push
+      branch_patterns:
+        - pattern: "main"
+          include: true
+          source: true
+    when:
+      changeset:
+        includes:
+          - "."
+        excludes:
+          - "ios/"
+          - "linux/"
+          - "macos/"
+          - "web/"
+          - "windows/"
     scripts:
       - name: Set up local.properties
         script: |
@@ -42,6 +59,23 @@ workflows:
       flutter: stable
       xcode: latest
       cocoapods: default
+    triggering:
+      events:
+        - push
+      branch_patterns:
+        - pattern: "main"
+          include: true
+          source: true
+    when:
+      changeset:
+        includes:
+          - "."
+        excludes:
+          - "android/"
+          - "linux/"
+          - "macos/"
+          - "web/"
+          - "windows/"
     scripts:
       - name: Set up code signing settings on Xcode project
         script: |
