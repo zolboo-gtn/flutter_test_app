@@ -36,7 +36,7 @@ workflows:
     environment:
       ios_signing:
         distribution_type: development
-        bundle_identifier: com.example.flutterTestApp
+        bundle_identifier: com.gtn.flutterTestApp
       groups:
         - firebase_credentials
       flutter: stable
